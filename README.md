@@ -4,7 +4,7 @@ Automation Testing for Mobile apps using Calabash and Apium
 ### Requerments
 * Install JDK
 * Install VirtualBox
-* Install GenyMotion (Nexus 5, Androit 5.1.0 API 22, Install gapss)
+* Install GenyMotion (Nexus 5, Android 5.1.0 API 22, Install gapss)
 * Download Android SDK and Set sdk location as ANDROID_HOME
 
 ### How do I get set up? ###
@@ -30,7 +30,7 @@ calabash-android setup app/staging.apk # Or using proper apk path
 
 ```
 calabash-android resign app/staging.apk # Or using proper apk path
-calabash-android run app/gojek-staging.apk # Or using proper apk path
+calabash-android run app/staging.apk # Or using proper apk path
 --format html --out reports.html # for html output
 ```
 
