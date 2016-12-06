@@ -1,0 +1,17 @@
+.DS_store
+Berksfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+app/*.apk
+features/*
+test_servers/*
