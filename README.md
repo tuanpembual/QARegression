@@ -10,23 +10,15 @@ Automation Testing for Mobile apps using Calabash and Apium
 ### How do I get set up? ###
 #### Setup Env ####
 ```
-#!bash
 keytool -genkey -v -keystore ~/.android/debug.keystore -alias debugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
 ```
 
 ```
-#!bash
-export ANDROID_HOME=~/Library/Android/sdk
-```
-
-```
-#!bash
 git clone git@github.com:tuanpembual/QARegression.git
 ```
 
 #### Run Testing ####
 ```
-#!bash
 cd QARegression
 bundle install
 calabash-android setup app/staging.apk # Or using proper apk path
@@ -37,7 +29,6 @@ calabash-android setup app/staging.apk # Or using proper apk path
 * alias : debugkey
 
 ```
-#!bash
 calabash-android resign app/staging.apk # Or using proper apk path
 calabash-android run app/gojek-staging.apk # Or using proper apk path
 --format html --out reports.html # for html output
