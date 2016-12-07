@@ -1,5 +1,5 @@
 # QARegression
-Automation Testing for Mobile apps using Calabash and Apium
+Automation Testing for Mobile apps using Calabash and Appium
 
 ### Requerments
 * Install JDK
