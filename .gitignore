@@ -15,3 +15,7 @@ bin/*
 app/*.apk
 features/*
 test_servers/*
+node_modules
+screenshot_0.png
+screenshot_1.png
+report.html
