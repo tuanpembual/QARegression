@@ -16,6 +16,5 @@ app/*.apk
 features/*
 test_servers/*
 node_modules
-screenshot_0.png
-screenshot_1.png
+screenshot_*.png
 report.html

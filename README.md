@@ -18,10 +18,11 @@ git clone git@github.com:tuanpembual/QARegression.git
 ```
 
 #### Run Testing ####
+Only run for first time.
 ```
 cd QARegression
 bundle install
-calabash-android setup app/staging.apk # Or using proper apk path
+bundle exec calabash-android setup app/staging.apk # Or using proper apk path
 ```
 
 * keystore location : ~/.android/debug.keystore
@@ -29,10 +30,22 @@ calabash-android setup app/staging.apk # Or using proper apk path
 * alias : debugkey
 
 ```
-calabash-android resign app/staging.apk # Or using proper apk path
-calabash-android run app/staging.apk # Or using proper apk path
+bundle exec calabash-android resign app/staging.apk # Or using proper apk path
+bundle exec calabash-android run app/staging.apk # Or using proper apk path
 --format html --out reports.html # for html output
 ```
 
 ### How to get Step Command
 https://github.com/calabash/calabash-android/blob/master/ruby-gem/lib/calabash-android/canned_steps.md
+
+### Done ###
+* Set profile to reduce run command | -p profile, add config/cucumber.yml file
+* Set multi scenario, set by tag
+add option ```-t @nametag```
+* Set specific scenario by add tag too
+add option ```-t @namescenario```
+* Add backgrout to run login scenario
+
+### To do ###
+* Set login from config | fail
+* Run multi device, deference scenario, avoid backdoor api
